@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="PracticeABCClasses">
+<!-- package is a attribute it will run all the classes inside a package -->
+<!--
+
+<test name="ClassA">
+	<packages>
+	<package name="com.TestNG.Practice.ClassA"/>
+	</packages>
+</test>
+-->
+
+<!-- With Specific Class in a Package -->
+<!-- 
+<test name="ClassA">
+<classes>
+<class name="com.TestNG.Practice.ClassA.PracticeClassA"/>
+<class name="com.TestNG.Practice.ClassA.PracticeClassB"/>
+</classes>
+</test>
+-->
+
+
+<!-- With Specific methods inside a class -->
+<!-- 
+<test name="ClassA">
+<classes>
+<class name="com.TestNG.Practice.ClassA.PracticeClassA">
+<methods>
+<include name="method3"/>
+</methods>
+</class>
+<class name="com.TestNG.Practice.ClassA.PracticeClassB">
+<methods>
+<include name="method2"/>
+</methods>
+</class>
+</classes>
+</test>
+-->
+
+
+<!-- Execution with groups inside a single class -->
+<!-- 
+<test name="ClassA">
+<groups>
+<run>
+<include name="regression"/>
+</run>
+</groups>
+<classes>
+<class name="com.TestNG.Practice.ClassA.PracticeClassA"/>
+</classes>
+</test>
+-->
+
+<!-- Execute groups in all the classes in a package -->
+<!--
+<test name="ClassA">
+<groups>
+<run>
+<include name="regression"/>
+</run>
+</groups>
+<packages>
+<package name="com.TestNG.Practice.ClassA"/>
+</packages>
+</test>
+-->
+
+<test name="ClassA">
+<classes>
+<class name="com.TestNG.Practice.ClassA.PracticeClassA">
+<methods>
+<exclude name="method1"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="ClassB">
+<classes>
+<class name="com.TestNG.Practice.ClassA.PracticeClassB"/>
+</classes>
+</test>
+
+
+</suite>
